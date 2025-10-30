@@ -259,7 +259,7 @@ async function peticionProductoBackend() {
     const urlLocal = import.meta.env.VITE_BACKEND_LOCAL
     const urlRemota = import.meta.env.VITE_BACKEND_REMOTO
 
-    const productos = await handlerHttp(urlRemota)
+    const productos = await handlerHttp(urlLocal)
     
     console.log(productos)
     listadoProductos = productos
